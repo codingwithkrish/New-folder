@@ -1,0 +1,85 @@
+body{
+  background-color: rgb(214, 245, 248);
+}
+.center-div{
+  background-color: white;
+  position:absolute;
+  width: 800px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 40px;
+}
+.textbox-style{
+  padding: 4px 0;
+  border:2px solid black;
+  border-radius: 10px;
+}
+.margin-buttom-12{
+  margin-bottom: 12px;
+}
+#errMsg{
+  color:red;
+}
+button{
+  border:0;
+  border-radius: 40px;
+  font-size: 13pt;
+  padding: 5px 15px;
+  background-color: black;
+  color:white;
+}
+button:hover{
+  background-color: white;
+  color:black;
+  border: 1px solid black;
+}
+.switch:hover{
+  color:blue;
+}
+#register-portal,#portal,#depoist-portal,#withdraw-portal,#transfer-portal{
+  display: none;
+}
+h3,h4{
+  display: inline-block;
+}
+
+
+.upheading{
+  text-align: center;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;}
+  .scroll-left {
+      height: 50px;	
+      overflow: hidden;
+      position: relative;
+      background: rgb(221, 245, 179);
+      color: black;
+      border: 1px solid black;
+     }
+     .scroll-left p {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      /* Starting position */
+      transform:translateX(100%);
+      /* Apply animation to this element */
+      animation: scroll-left 15s linear infinite;
+     }
+     /* Move it (define the animation) */
+     @keyframes scroll-left {
+      0%   {
+      transform: translateX(100%); 		
+      }
+      100% {
+      transform: translateX(-100%); 
+      }
+     }
